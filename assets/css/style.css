@@ -1036,7 +1036,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { 
 	  border:2px solid;
-	  border-radius: 10px; }
+	  border-radius: 2px; }
 
   .avatar-box img { width: 120px; 
 		  border:2px solid;
