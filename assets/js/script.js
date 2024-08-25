@@ -80,6 +80,7 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav links
 navigationLinks.forEach(link => {
   link.addEventListener("click", function () {
+    // Get the trimmed and normalized page name from the clicked link
     const pageName = link.textContent.trim().toLowerCase();
 
     // Hide all pages and remove active class from links
@@ -88,13 +89,20 @@ navigationLinks.forEach(link => {
 
     // Show the target page and set the link as active
     const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+
     if (targetPage) {
       targetPage.classList.add("active");
       link.classList.add("active");
       window.scrollTo(0, 0);  // scroll to the top
+    } else {
+      console.error(`No section found for ${pageName}`);
     }
   });
 });
 
 // Initialize the page by showing the "About" section (or any default section)
 document.querySelector("[data-page='about']").classList.add("active");
+
+
+
+    
