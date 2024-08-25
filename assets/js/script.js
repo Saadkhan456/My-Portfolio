@@ -126,3 +126,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+//additional JS
+
+
+document.querySelectorAll('[data-nav-link]').forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove the "active" class from all buttons
+    document.querySelectorAll('[data-nav-link]').forEach(btn => btn.classList.remove('active'));
+    
+    // Add "active" class to the clicked button
+    button.classList.add('active');
+    
+    // Hide all sections
+    document.querySelectorAll('[data-page]').forEach(section => section.style.display = 'none');
+    
+    // Get the text content of the clicked button
+    const pageName = button.textContent.trim();
+    
+    // Show the corresponding section
+    const targetSection = document.querySelector(`[data-page="${pageName}"]`);
+    
+    if (targetSection) {
+      targetSection.style.display = 'block';
+    }
+  });
+});
+
+// Initialize the page by showing the "About" section (or any default section)
+document.querySelector('[data-page="About"]').style.display = 'block';
