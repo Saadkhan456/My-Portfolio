@@ -1,11 +1,7 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
@@ -13,16 +9,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-
-
-
-
-
-
-
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -82,8 +68,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
-
-
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
@@ -103,26 +87,31 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+navigationLinks.forEach((navLink, index) => {
+  navLink.addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    // Hide all pages and remove active class from all nav links
+    pages.forEach(page => page.classList.remove("active"));
+    navigationLinks.forEach(link => link.classList.remove("active"));
+
+    // Show the clicked page and add active class to the corresponding nav link
+    const pageName = navLink.innerHTML.toLowerCase();
+    const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+
+    if (targetPage) {
+      targetPage.classList.add("active");
+      navLink.classList.add("active");
+      window.scrollTo(0, 0);  // scroll to the top
     }
 
   });
-}
+});
+
+// Initialize by displaying the "About" page or the first page
+document.querySelector("[data-page='about']").classList.add("active");
+navigationLinks[0].classList.add("active");
