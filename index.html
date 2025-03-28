@@ -1,560 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saad Khan - Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <!-- #MAIN -->
+    <main>
+      <!-- #SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar-3.jpeg.jpeg"
+              alt="Saad Khan"
+              width="80"
+            />
+          </figure>
 
-<body>
+          <div class="info-content">
+            <h1 class="name">Saad Khan</h1>
+            <p class="title">Front-End Developer</p>
+          </div>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar-3.jpeg.jpeg" alt="Saad Khan" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Om Kharche">Saad Khan</h1>
-
-          <p class="title">Front-End Developer</p>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:saadkhanwork12@gmail.com" class="contact-link">saadkhanwork12@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+91 9987758208" class="contact-link">+91 9987758208</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">30 October, 2002</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Thane, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/Saadkhan456" class="social-link">
-              <ion-icon name="logo-Github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="" class="social-link">
-              <ion-icon name="logo-Linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/saad_khan_0_1?igsh=NHN2cGM0OGoyZ2U2" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-          <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a Front-End Developer in web development and learning new concepts.
-            I enjoy turning complex problems into simple, beautiful and intuitive Websites.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            My journey is big and I wanna become a MERN Stack Developer, and wanna make websites with full Rront and
-            Back-end connectivity
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:saadkhanwork12@gmail.com" class="contact-link"
+                  >saadkhanwork12@gmail.com</a
+                >
               </div>
-
             </li>
-        </section>
 
-        <!--
-          - testimonials modal
-        -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+919987758208" class="contact-link"
+                  >+91 9987758208</a
+                >
+              </div>
+            </li>
 
-        <div class="modal-container" data-modal-container>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2002-10-30">30 October, 2002</time>
+              </div>
+            </li>
 
-          <div class="overlay" data-overlay></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Thane, India</address>
+              </div>
+            </li>
+          </ul>
 
-          <section class="testimonials-modal">
+          <div class="separator"></div>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/Saadkhan456"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/saad-khan-75aa11277/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/saad_khan_0_1?igsh=NHN2cGM0OGoyZ2U2"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- #main-content -->
+      <div class="main-content">
+        <!-- #NAVBAR -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- #ABOUT -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a Front-End Developer in web development and learning new
+              concepts. I enjoy turning complex problems into simple, beautiful
+              and intuitive Websites.
+            </p>
+            <p>
+              My job is to build your website so that it is functional and
+              user-friendly but at the same time attractive. My journey is big
+              and I wanna become a MERN Stack Developer, and wanna make websites
+              with full Front and Back-end connectivity.
+            </p>
           </section>
 
-      </article>
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Currently Pursuing Masters</h4>
-
-              <span>2024-Now</span>
-
-              <p class="timeline-text">
-                Currently Pursuing Masters in Infromation Technology at Sheth NKT College,Thane (Autonomous).
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University Of Mumbai</h4>
-
-              <span>2021-2024</span>
-
-              <p class="timeline-text">
-                I Studied from Sheth NKT College, Thane (Affiliated with University of Mumbai).
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">College</h4>
-
-              <span>2019-2020</span>
-
-              <p class="timeline-text">
-                I studied 11th and 12th Science (PCM) From Asadullah Khan Collge, Mumbra.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Made a Final Year Project</h4>
-
-              <span>2023-24</span>
-
-              <p class="timeline-text">
-                Made a Final Year Project, Hotel Management Website with fuly Back-end connectivity.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Intern at Edufyi Tech Solutions, Bangalore</h4>
-
-              <span>Nov 2024-present</span>
-
-              <p class="timeline-text">
-                Doing tasks and projects to get in hand Experience
-              </p>
-
-              <!-- </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li> -->
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTML</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CSS (With Tailwind)</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Javascript</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">React js</h5>
-                <data value="0"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 0%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="Projects" data-page="projects">
-  <header>
-    <h2 class="h2 article-title">Projects</h2>
-  </header>
-      
-        <section class="projects">
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <!-- Other filter items can be removed if no longer needed -->
-          </ul>
-      
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-      
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
               </li>
-              <!-- Other select items removed -->
             </ul>
-          </div>
-      
+          </section>
+        </article>
 
-  <ul class="project-list">
-  <!-- First project item -->
-  <li class="project-item active" data-filter-item data-category="Random-Category">
-    <a href="https://saadkhan456.github.io/Netflix-Clone-Front-end-/">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/project-1.png" alt="random-project" loading="lazy">
-      </figure>
-      <h3 class="project-title">Netflix Front-End Clone</h3>
-      <p class="project-category">Front-End</p>
-    </a>
-  </li>
+        <!-- #RESUME -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-  <!-- Second project item -->
-  <li class="project-item active" data-filter-item data-category="New-Category">
-    <a href="Https://SarsaHotel.infinityfreeapp.com">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/project-2.png" alt="new-project" loading="lazy">
-      </figure>
-      <h3 class="project-title">Sarsa Hotel Management Website</h3>
-      <p class="project-category">PHP/MySQL</p>
-    </a>
-  </li>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
 
-  <!-- Third project item -->
-  <li class="project-item active" data-filter-item data-category="Game">
-    <a href="https://guess-my-number-rho-amber.vercel.app/">
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
-        </div>
-        <img src="./assets/images/project-3.png" alt="guess-my-number-game" loading="lazy">
-      </figure>
-      <h3 class="project-title">Guess My Number Game</h3>
-      <p class="project-category">JavaScript Game</p>
-    </a>
-  </li>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Currently Pursuing Masters
+                </h4>
+                <span>2024-Now</span>
+                <p class="timeline-text">
+                  Currently Pursuing Masters in Information Technology at Sheth
+                  NKT College, Thane (Autonomous).
+                </p>
+              </li>
 
-<!-- Fourth project item -->
-  <li class="project-item active" data-filter-item data-category="Game">
-  <a href="https://henna-bliss.vercel.app">  <!-- Fixed anchor tag -->
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University Of Mumbai</h4>
+                <span>2021-2024</span>
+                <p class="timeline-text">
+                  I Studied from Sheth NKT College, Thane (Affiliated with
+                  University of Mumbai).
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">College</h4>
+                <span>2019-2020</span>
+                <p class="timeline-text">
+                  I studied 11th and 12th Science (PCM) From Asadullah Khan
+                  College, Mumbra.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Made a Final Year Project
+                </h4>
+                <span>2023-24</span>
+                <p class="timeline-text">
+                  Made a Final Year Project, Hotel Management Website with fully
+                  Back-end connectivity.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Intern at Edufyi Tech Solutions, Bangalore
+                </h4>
+                <span>Nov 2024-present</span>
+                <p class="timeline-text">
+                  Doing tasks and projects to get in hand Experience.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS (With Tailwind)</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="50">50%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React JS</h5>
+                  <data value="30">30%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- #PROJECTS -->
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Frontend</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Fullstack</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Mini Projects</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Frontend</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Fullstack</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Mini Projects</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- Netflix Front-End Clone -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="frontend"
+              >
+                <a
+                  href="https://saadkhan456.github.io/Netflix-Clone-Front-end-/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1.png"
+                      alt="Netflix Clone"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Netflix Front-End Clone</h3>
+                  <p class="project-category">Frontend</p>
+                </a>
+              </li>
+
+              <!-- Sarsa Hotel Management Website -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="fullstack"
+              >
+                <a
+                  href="https://SarsaHotel.infinityfreeapp.com"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="Hotel Management"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Sarsa Hotel Management Website</h3>
+                  <p class="project-category">Fullstack (PHP/MySQL)</p>
+                </a>
+              </li>
+
+              <!-- Guess My Number Game -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mini-projects"
+              >
+                <a
+                  href="https://guess-my-number-rho-amber.vercel.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-3.png"
+                      alt="Number Guessing Game"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Guess My Number Game</h3>
+                  <p class="project-category">Mini Project (JavaScript)</p>
+                </a>
+              </li>
+
+              <!-- Mehendi Website -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="fullstack"
+              >
+                <a href="https://henna-bliss.vercel.app" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Project-4.png"
+                      alt="Mehendi Website"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Mehendi Website</h3>
+                  <p class="project-category">Fullstack (MERN)</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
       </div>
-      <img src="./assets/images/Project-4.png" alt="Balloon Pop-up" loading="lazy">
-    </figure>
-    <h3 class="project-title">Mehendi Website</h3>
-    <p class="project-category">Mini E-Commerce Website Using MERN Stack</p>
-  </a>  <!-- Closing anchor tag in the correct place -->
-</li>
-    </ul>
+    </main>
 
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
 
-   
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
